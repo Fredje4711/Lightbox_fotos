@@ -1,0 +1,186 @@
+/* ----------------------------------------------------- */
+/* ----------------     small scherm     ------------    */
+/* ----------------------------------------------------- */
+
+  
+  .containerDownload {  
+    display:grid; 
+	width: 72%; height:auto;
+	margin: 5vw 20% 10vw 8%;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto ;
+	justify-content:center; align-content: start; 
+    justify-items:center; align-items: center; 
+    grid-row-gap: 0px; grid-column-gap:1.2vw;
+	font-size:2.4vw;  }
+    
+ 
+  .containerDownload label { 
+    display:flex; margin: 0 auto;
+	text-align:center; 
+	width:auto; height: auto;
+	justify-content: center;  
+	align-items: center; }
+	
+  .containerDownload label:nth-child(1) { font-size:3.2vw; font-weight:bold; color: var(--colorRed); }
+  .containerDownload label:nth-child(2) {font-size:3vw; font-weight:normal; color: var(--colorRed); }
+  
+ 
+  .containerDownloadImg {
+    grid-row: 3 / -1;  
+	display:flex ; align-self: start;  
+	margin: 0 0; text-align:center;
+	align-items: flex-start; 
+	align-content:flex-start;
+	justify-content: center; }	
+   
+   .containerDownloadImg div { padding: 1.5vw 0; } 
+	 
+   .containerDownloadImg img {
+     border:0.8vw transparent solid;
+	 outline:1px var(--pgColor) solid; outline-offset:-2px;
+	 margin:  0 calc(10% + 0.8vw) ;
+	 width: calc(80% - 1.6vw); height: auto; }       
+   
+   .containerDownloadTxt {
+     background-color: transparent;
+     display:flex; position:relative;
+	 border-width:1px 0 1px 0;
+	 border-color:var(--pgColor) solid;
+	 border-style:solid;
+	 flex-direction: column;
+	 justify-content:space-around;
+	 align-content: center;
+	 width:100%; height:18vw; 
+	 font-size:2.6vw;
+	 text-align:center; } 
+	
+	.containerDownloadTxt div:nth-child(1) { font-weight:bold; }
+	.containerDownloadTxt div:nth-child(2) { font-weight:normal; }
+	.containerDownloadTxt div:nth-child(3) { text-align:right; font-size: 2vw; font-weight:normal; }
+	
+
+  /* -------------------------------------------------------- */
+  /*  --------------     medium scherm     --------------    */
+  /* -------------------------------------------------------- */
+  @media only screen and (min-width: 768px) and ( orientation: landscape)   {  
+  
+  .containerDownload {  
+    display:grid; 
+	width: 86%; height: auto;
+	margin: 5vw 11% 8vw 3%;
+	grid-template-columns: 35% 1fr;
+	grid-template-rows: auto auto ;
+	justify-content:center; align-content: start; 
+    justify-items:start; align-items: center; 
+    grid-row-gap: 0px; grid-column-gap:2.6vw;
+	font-size:2vw; }
+    
+ 
+  .containerDownload label { 
+    grid-column: 1 / span 2;
+	display:flex; margin: 0 auto;
+	position:relative;text-align:center; 
+	width:auto; height: auto;
+	justify-content: center;  
+	align-items: center; }
+	
+   .containerDownload label:nth-child(1) { font-size:2.6vw; font-weight:bold; color: var(--colorRed); }
+  .containerDownload label:nth-child(2) {font-size:2.2vw; font-weight:normal; color: var(--colorRed); }
+  
+ 
+  .containerDownloadImg { 
+    grid-row: 3 / -1;  
+	display:flex ; align-self: start;  
+	margin: 0 0 0 0; text-align:center;
+	align-items: flex-start; 
+	align-content:flex-start;
+	justify-content: center; }	
+   
+   .containerDownloadImg div { padding: 0.5vw 0 1vw 0; } 
+	  
+   .containerDownloadImg img {
+     border:0.8vw transparent solid;
+	 outline:1px var(--pgColor) solid; outline-offset:-2px;
+	 width: calc(100% - 1.6vw); height: auto; }       
+   
+   .containerDownloadTxt {
+     background-color:#80e0e6;
+	 width:100%; overflow-x:hidden;
+     display:flex; position:relative;
+	 border: 1vw transparent solid;
+	 font-size: 2vw;
+	 flex-direction: column;
+	 justify-content:space-around;
+	 align-content: center;
+	 width:100%; height:100%; 
+	 text-align:center; } 
+	
+	.containerDownloadTxt div:nth-child(1) { font-weight:bold; }
+	.containerDownloadTxt div:nth-child(2) { font-weight:normal; }
+	.containerDownloadTxt div:nth-child(3) { text-align:right; font-size: 1.6vw; font-weight:normal; }
+	    	 
+    }
+
+  /* -------------------------------------------------------- */
+  /*  --------------     large scherm     ----------------    */
+  /* -------------------------------------------------------- */
+  @media only screen and (min-width: 1280px) {  
+  
+  .containerDownload {  
+    display:grid; 
+	width: 86%; height:auto;
+	margin: 5vw 11% 5vw 3%;
+	grid-template-columns: 34% 1fr;
+	grid-template-rows: auto auto ;
+	justify-content:center; align-content: start; 
+    justify-items:start; align-items: center; 
+    grid-row-gap: 0px; grid-column-gap:2.4vw;
+	font-size:1.8vw; }
+    
+ 
+  .containerDownload label { 
+    grid-column: 1 / span 2;
+	display:flex; margin: 0 auto;
+	position:relative;text-align:center; 
+	width:auto; height: auto;
+	justify-content: center;  
+	align-items: center; }
+	
+  .containerDownload label:nth-child(1) { font-size:2.2vw; font-weight:bold; color: var(--colorRed); }
+  .containerDownload label:nth-child(2) {font-size:1.8vw; font-weight:normal; color: var(--colorRed); }
+  
+
+  .containerDownloadImg { 
+    grid-row: 3 / -1; 
+	width:100%; 
+	display:flex ; align-self: start;  
+	margin: 0 0 0 0; text-align:center;
+	align-items: flex-start; 
+	align-content:flex-start;
+	justify-content: center; }	
+   
+   .containerDownloadImg div { padding: 0.4vw 0 0.8vw 0; } 
+	  
+   .containerDownloadImg img {
+     border:0.5vw transparent solid;
+	 outline:1px var(--pgColor) solid; outline-offset:-2px;
+	 width: calc(100% - 1vw); height: auto; }       
+   
+   .containerDownloadTxt {
+     background-color:#80e0e6;
+     display:flex; position:relative;
+	 width:100%; overflow-x:hidden;
+	 border: 1vw transparent solid;
+	 font-size: 1.8vw;
+	 flex-direction: column;
+	 justify-content:space-around;
+	 align-content: center;
+	 width:100%; height:100%; 
+	 text-align:center; } 
+	
+	.containerDownloadTxt div:nth-child(1) { font-weight:bold; }
+	.containerDownloadTxt div:nth-child(2) { font-weight:normal; }
+	.containerDownloadTxt div:nth-child(3) { text-align:right; font-size: 1.4vw; font-weight:normal; }
+	
+     }

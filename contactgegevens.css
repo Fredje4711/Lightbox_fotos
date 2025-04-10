@@ -1,0 +1,106 @@
+/* ----------------------------------------------------- */
+/* ----------------     small scherm     ------------    */
+/* ----------------------------------------------------- */
+
+
+ 
+  .contactItm {    
+    display:grid; 
+    width: 86%; height:auto;
+	margin: 5vw 11% 15vw 3%;
+	grid-template-columns: 30% auto;
+	grid-template-rows: repeat( 10 , auto);
+	justify-content: center; align-content:start;
+    justify-items: start; align-items: start;;
+    grid-row-gap: 0px;  grid-column-gap: 2vw; } 
+	 
+  .contactImg { 
+    display: flex;
+	margin-bottom:2vw;
+	width:100%; height:auto;
+	justify-content: center; align-content:start;}
+  
+  .contactImg img { width:100%; height:auto; }
+  
+   .contactTxt { 
+    display: flex;
+	flex-direction: column;
+	justify-content:flex-start;
+	align-content: center;
+	align-items: flex-start;
+    width:100%; height:100%; 
+	font-size:2.8vw; line-height:1.5; font-weight:500;} 
+	
+	
+  /* -------------------------------------------------------- */
+ /*  --------------     medium scherm     --------------    */
+ /* -------------------------------------------------------- */
+  @media only screen and (min-width: 768px) and ( orientation: landscape)   {  
+  
+   .contactItm {
+    display:grid; 
+    width: 86%; height:auto;
+	margin: 5vw 11% 15vw 3%;
+	grid-template-columns: 22% auto;
+	grid-template-rows: repeat(8,auto);
+	justify-content: center; align-content:start;
+    justify-items: start; align-items: start;;
+    grid-row-gap: 2vw; grid-column-gap: 1.5vw; } 
+	 
+  .contactImg { 
+    display: flex;
+	margin-bottom:4vw;
+	width:100%; height:auto;
+	justify-content: center; align-content:start;}
+  
+  .contactImg img { width:100%; height:auto; }
+  
+   .contactTxt { 
+    display: flex;
+	flex-direction: column;
+	justify-content:flex-start;
+	align-content: center;
+	align-items: flex-start;
+    width:100%; height:100%; 
+	font-size:2.4vw; line-height:1.5; font-weight:500;} 
+
+  	
+	}
+  
+ /* -------------------------------------------------------- */
+  /*  --------------     large scherm     ----------------    */
+  /* -------------------------------------------------------- */
+  @media only screen and (min-width: 1280px) {  
+  
+ .contactItm {    
+    display:grid; 
+    width: 86%; height:auto;
+	margin: 5vw 11% 15vw 3%;
+	grid-template-columns: 20% auto;
+	grid-template-rows: repeat(8, auto);
+	justify-content: center; align-content:start;
+    justify-items: start; align-items: start;;
+    grid-row-gap: 1.5vw; grid-column-gap: 1vw; } 
+	 
+  .contactImg { border: 2px #ff0000 solid; 
+    display: flex;
+	margin-bottom:3vw;
+	width:100%; height:auto;
+	justify-content: center; align-content:stretch;}
+  
+  .contactImg img { width:100%; height:auto; }
+  
+  .contactTxt { 
+    display: flex;
+	flex-direction: column;
+	justify-content:flex-start;
+	align-content: center;
+	align-items: flex-start;
+    width:100%; height:100%; 
+	font-size:2vw; line-height:1.5; font-weight:500;} 
+            
+      }
+
+
+	  
+	
