@@ -1,0 +1,144 @@
+/* Basisstijlen */
+body {
+    font-family: 'Roboto', sans-serif; /* Zelfde font als origineel */
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Standaard lichte achtergrond */
+    color: #333;
+    font-size: 15px;
+}
+
+#wrapperDemo {
+    max-width: 1200px; /* Maximale breedte, kan aangepast */
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Header (Titelbalk) */
+#titelWebsiteDemo {
+    background-color: #6f32aa; /* Paars zoals origineel */
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.1em;
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Zorgt dat het bovenaan blijft */
+    display: flex;
+    align-items: center;
+}
+
+/* Container voor menu en content */
+.containerDemo {
+    display: flex;
+    flex-wrap: wrap; /* Zorgt dat op mobiel de content onder menu kan */
+}
+
+/* Linker Menu Kolom */
+#MnuDemo {
+    width: 250px; /* Breedte van het menu */
+    background-color: #6f32aa; /* Paarse achtergrond zoals Mnu1 */
+    color: white;
+    padding: 15px 0; /* Padding boven/onder */
+    min-height: calc(100vh - 55px); /* Zorgt dat menu hoog genoeg is (pas hoogte aan op basis van header) */
+    box-sizing: border-box;
+}
+
+#MnuLstDemo {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item-demo {
+    display: flex; /* Icoon en label naast elkaar */
+    align-items: center;
+    padding: 10px 20px; /* Padding binnen elk item */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Lijn tussen items */
+    font-weight: normal;
+}
+
+.menu-item-demo:last-child {
+    border-bottom: none;
+}
+
+.menu-item-demo i {
+    margin-right: 10px; /* Ruimte tussen icoon en tekst */
+    width: 20px; /* Vaste breedte voor uitlijning */
+    text-align: center;
+}
+
+.menu-item-demo:hover {
+    background-color: rgba(255, 255, 255, 0.15); /* Lichte hover */
+}
+
+.menu-item-demo.active {
+    background-color: #00dd00; /* Groene selectiekleur zoals Mnu1 */
+    font-weight: bold;
+    color: #333; /* Donkere tekst voor actief item */
+}
+.menu-item-demo.active i {
+     color: #333; /* Donker icoon ook */
+}
+
+
+/* Rechter Content Kolom */
+/* In demo-style.css */
+#allPagesDemo {
+    flex-grow: 1; /* Neemt de rest van de breedte */
+    width: 0; /* TOEGEVOEGD: Helpt flexbox met breedteberekening */
+    padding: 25px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    min-height: calc(100vh - 55px);
+}
+
+/* Standaard alle content secties verbergen */
+.pgContentDemo {
+    display: none;
+}
+
+.pgContentDemo h2 {
+    color: #6f32aa; /* Paarse titel */
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Box voor extra uitleg */
+.uitleg-box {
+    border: 1px solid #a3e6bd; /* Groene rand */
+    background-color: #f0fdf4; /* Heel lichtgroen */
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 0.95em;
+}
+.uitleg-box code {
+    background-color: #e2e8f0;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+
+/* Responsive aanpassing voor kleinere schermen */
+@media (max-width: 768px) {
+    .containerDemo {
+        flex-direction: column; /* Menu boven content */
+    }
+    #MnuDemo {
+        width: 100%; /* Menu volledige breedte */
+        min-height: auto; /* Hoogte automatisch */
+        position: static; /* Niet meer sticky aan de zijkant */
+    }
+    #allPagesDemo {
+        min-height: auto;
+    }
+     #titelWebsiteDemo {
+        position: static; /* Header niet meer sticky op mobiel */
+    }
+}
